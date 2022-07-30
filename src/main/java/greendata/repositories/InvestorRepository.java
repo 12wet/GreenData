@@ -1,4 +1,4 @@
-package greendata.domain.repositories;
+package greendata.repositories;
 
 import greendata.domain.client.Investor;
 import org.springframework.data.repository.CrudRepository;
