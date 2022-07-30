@@ -1,4 +1,4 @@
-package greendata;
+package com.greendata;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

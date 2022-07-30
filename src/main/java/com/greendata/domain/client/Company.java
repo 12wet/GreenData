@@ -1,10 +1,9 @@
-package greendata.domain.client;
+package com.greendata.domain.client;
 
-import greendata.domain.model.BaseEntity;
+import com.greendata.domain.model.BaseEntity;
 
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 
 @Entity

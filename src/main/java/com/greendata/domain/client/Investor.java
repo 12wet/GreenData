@@ -1,8 +1,8 @@
-package greendata.domain.client;
+package com.greendata.domain.client;
 
-import greendata.domain.installation.Installation;
-import greendata.domain.installation.Quotation;
-import greendata.domain.model.BaseEntity;
+import com.greendata.domain.installation.Installation;
+import com.greendata.domain.installation.Quotation;
+import com.greendata.domain.model.BaseEntity;
 
 import javax.persistence.*;
 import java.time.LocalDate;

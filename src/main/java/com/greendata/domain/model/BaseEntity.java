@@ -1,4 +1,4 @@
-package greendata.domain.model;
+package com.greendata.domain.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

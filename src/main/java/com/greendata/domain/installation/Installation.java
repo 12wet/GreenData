@@ -1,10 +1,11 @@
-package greendata.domain.installation;
+package com.greendata.domain.installation;
 
-import greendata.domain.client.Investor;
-import greendata.domain.model.BaseEntity;
-import org.apache.tomcat.websocket.pojo.PojoMessageHandlerWholeBase;
+import com.greendata.domain.client.Investor;
+import com.greendata.domain.model.BaseEntity;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import java.util.Set;
 
 @Entity
