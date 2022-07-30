@@ -1,4 +1,4 @@
-package greendata.client;
+package greendata.domain.client;
 
 public enum InterestStatus {
     INTERESTED,
