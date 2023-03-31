@@ -8,13 +8,14 @@ import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
-import java.io.File;
 
 @Entity
 public class Quotation extends BaseEntity {
 
-    @Lob private String description;
-    @Lob private String quotation;
+    @Lob
+    private String description;
+    @Lob
+    private byte[] quotation;
 
     @ManyToOne
     @JsonBackReference
@@ -34,12 +35,11 @@ public class Quotation extends BaseEntity {
         this.description = description;
     }
 
-    public String getQuotation() {
-        quotation = "quotations" + File.separatorChar + getId();
+    public byte[] getQuotation() {
         return quotation;
     }
 
-    public void setQuotation(String quotation) {
+    public void setQuotation(byte[] quotation) {
         this.quotation = quotation;
     }
 
@@ -63,7 +63,6 @@ public class Quotation extends BaseEntity {
     public String toString() {
         return "Quotation{" +
                 "description='" + description + '\'' +
-                ", quotation='" + quotation + '\'' +
                 ", investor=" + investor +
                 ", installation=" + installation +
                 '}';

@@ -27,8 +27,8 @@ public class DataLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        loadFirstClient();
-        loadSecondClient();
+//        loadFirstClient();
+//        loadSecondClient();
     }
 
     private void loadFirstClient() {

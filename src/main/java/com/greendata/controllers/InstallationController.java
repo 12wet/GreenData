@@ -44,5 +44,4 @@ public class InstallationController {
                 .created(installationEntityModel.getRequiredLink(IanaLinkRelations.SELF).toUri())
                 .body(installationEntityModel);
     }
-
 }
