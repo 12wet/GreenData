@@ -7,9 +7,9 @@ import java.util.Optional;
 
 public interface InvestorRepository extends CrudRepository<Investor, Long> {
 
-    Optional<Investor> findByEmail();
+    Optional<Investor> findByEmail(String email);
 
-    Optional<Investor> findByPhoneNumber();
+    Optional<Investor> findByPhoneNumber(String phoneNumber);
 
-    Optional<Investor> findByLastName();
+    Optional<Investor> findByLastName(String lastName);
 }

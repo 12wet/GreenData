@@ -3,12 +3,14 @@ package com.greendata.services.impl;
 import com.greendata.domain.client.Investor;
 import com.greendata.repositories.InvestorRepository;
 import com.greendata.services.InvestorService;
+import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
+@Service
 public class InvestorServiceImpl implements InvestorService {
 
     private final InvestorRepository investorRepository;

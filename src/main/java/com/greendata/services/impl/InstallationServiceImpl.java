@@ -3,12 +3,14 @@ package com.greendata.services.impl;
 import com.greendata.domain.installation.Installation;
 import com.greendata.repositories.InstallationRepository;
 import com.greendata.services.InstallationService;
+import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
+@Service
 public class InstallationServiceImpl implements InstallationService {
 
     private final InstallationRepository installationRepository;
